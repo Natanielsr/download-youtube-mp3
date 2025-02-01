@@ -2,17 +2,17 @@ import subprocess
 
 class BaixarMusicas:
 
-    def __init__(self, list_of_video_links : list[str]):
-        # Lista de links dos vídeos do YouTube
-        self._list_of_video_links = list_of_video_links
-
+    def __init__(self):
         # Caminho para o yt-dlp.exe
         self._yt_dlp_path = r"yt-dlp.exe"  # Substitua pelo caminho do seu yt-dlp.exe
 
         # Caminho para o arquivo de cookies
         self._cookies_path = r"cookies.txt"  # Substitua pelo caminho do seu arquivo de cookies
 
-    def baixar_todos_videos(self):
+    def baixar_todos_videos(self, list_of_video_links : list[str]):
+        # Lista de links dos vídeos do YouTube
+        list_of_video_links
+
         # Baixar todos os vídeos da lista
         i = 1
         for link in self._list_of_video_links:
